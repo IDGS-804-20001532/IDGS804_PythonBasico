@@ -1,0 +1,30 @@
+import os
+class Operasbas():
+    #Popiedades de clase
+    num1=0
+    num2=0
+    resp=0
+    #Constructor de la clase 
+    def __init__(self,a,b):
+        self.num1=a
+        self.num2=b
+
+    def suma(self):
+        self.resp=self.num1+self.num2
+
+
+    def resta(self):
+        self.resp=self.num1-self.num2
+
+
+def main():
+    os.system("cls")
+    obj=Operasbas(3,4)
+    obj.suma()
+    print("La suma es: {}".format(obj.resp))
+
+###Se determina hasta donde debe de ejecutarse
+if __name__=='__main__':
+    main()
+
+#Metodos de clase 
